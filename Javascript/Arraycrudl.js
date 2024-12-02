@@ -18,7 +18,8 @@ var Printall = () => {
         temp += " <tr><td><ul><li>" + getting + "</li></ul></td></tr>";
     })
 
-    document.getElementById('list').innerHTML = "<table><thead bgcolor='red'><tr><th>Travels List</th></tr></thead><tbody bgcolor='pink' align='center'>" + temp + "</tbody></table>";
+    document.getElementById('list').innerHTML = "<table><thead bgcolor='grey'><tr><th>Travels List</th></tr></thead> <tbody bgcolor='pink' align='center'>" + temp + "</tbody></table>";
+    
 }
 
 let Updating = () => {
@@ -54,7 +55,7 @@ function Finding() {
     let searchingvalue = document.getElementById('Travels').value;
 
     for (i = 0; i < Travelsname.length; i++) {
-        if (Travelsname[i] === searchingvalue) {
+        if (Travelsname[i] == searchingvalue) {
             return i;
         }
     }
